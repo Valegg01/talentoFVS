@@ -1,0 +1,109 @@
+footer {
+    background-color: #e9e4f0;
+    background-attachment: fixed;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 50px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    padding: 10px;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9; /* Cambié la coma por un punto */
+}
+
+.footerNav {
+    margin: 10px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.767)), url('../Imagenes/footer.jpg');
+    padding: 20px;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 700px) {
+    .footerContainer {
+        padding: 30px; /* Reduce el padding en pantallas más pequeñas */
+    }
+
+    .socialIcons {
+        flex-direction: column; /* Cambia la dirección de los iconos sociales */
+        align-items: center; /* Centra los iconos */
+    }
+
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+
+    .footerNav ul {
+        flex-direction: column; /* Cambia la dirección de la lista de navegación */
+        align-items: center; /* Centra los elementos de la lista */
+    }
+
+    .footerNav ul li {
+        width: 100%; /* Asegura que cada elemento ocupe el 100% del ancho */
+        text-align: center; /* Centra el texto */
+        margin: 10px 0; /* Espaciado vertical entre elementos */
+    }
+
+    .footerNav ul li a {
+        font-size: 1.2em; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+        margin: 10px 0; /* Espaciado vertical entre enlaces */
+    }
+}
+
+@media (max-width: 500px) {
+    .footerNav ul li a {
+        font-size: 1em; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+    }
+
+    .socialIcons a i {
+        font-size: 1.5em; /* Reduce el tamaño de los iconos en pantallas pequeñas */
+    }
+}

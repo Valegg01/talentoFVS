@@ -1,0 +1,46 @@
+.contenedorg {
+    display: flex; /* Habilita flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.767)), url('../Imagenes/Energias-renovables-mexico.jpg');
+    margin-bottom: 100px;
+    padding: 20px; /* Espaciado interno */
+}
+
+.grafica {
+    background-color: rgba(255, 255, 255, 0.904);
+    display: flex; /* Habilita flexbox en el contenedor de la gráfica */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin: 20px 0; /* Espaciado entre las gráficas */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 600px; /* Ancho máximo para pantallas grandes */
+}
+
+h1{
+    color: white;
+}
+
+canvas {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .grafica {
+        max-width: 90%; /* Ancho máximo para pantallas pequeñas */
+    }
+
+    canvas {
+        height: 150px; /* Ajusta la altura del canvas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    canvas {
+        height: 100px; /* Ajusta la altura del canvas en pantallas muy pequeñas */
+    }
+}

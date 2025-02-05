@@ -1,0 +1,121 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>dashboard</title>
+      <link rel="stylesheet" href="../Estilos/Estilo.css">
+      <link rel="stylesheet" href="../Estilos/Barra.css">
+      <link rel="stylesheet" href="../Estilos/Footer.css">
+      <link rel="stylesheet" href="../Estilos/Graficas.css">
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="../Imagenes/Logo.png" alt="logo" />
+        <h2>Proyecto Tech</h2>
+      </div>
+      <ul class="sidebar-links">
+        <h4>
+          <span>Energias Limpias</span>
+          <div class="menu-separator"></div>
+        </h4>
+        <li>
+          <a href="../Index.html">
+              <img src="../Iconos/Informacion.png" class="icon";> Informacion </a>
+        </li>
+        <li>
+          <a href="./eolica.html">
+              <img src="../Iconos/Eolica.png" class="icon";> Energia Eolica </a>
+        </li>
+        <p>
+          <br>
+        </p>
+        <h4>
+          <span>Datos</span>
+          <div class="menu-separator"></div>
+        </h4>
+        <li>
+          <a href="./formulario.html">
+              <img src="../Iconos/calculadora.png" class="icon";> Calcular </a>
+        </li>
+        <li>
+          <a href="#">
+              <img src="../Iconos/Grafico.png" class="icon";> Graficos </a>
+        </li>
+        <p>
+          <br>
+        </p>
+        <h4>
+          <span>Integrantes</span>
+          <div class="menu-separator"></div>
+        </h4>
+        <li>
+          <a href="#">
+            <img src="../Iconos/Integrantes.png" class="icon";> Fabian Pulido</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../Iconos/Integrantes.png" class="icon";> Valentina Gomez</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../Iconos/Integrantes.png" class="icon";> Bryan Salinas</a>
+        </li>
+      </ul>
+    </aside>
+
+    <Section class="contenedorg">>
+        <h1>Graficas sobre Energia Limpias</h1>
+        <div class="grafica">
+            <canvas id="barras"></canvas>
+        </div>
+        <p>
+          <br>
+        </p>
+        <div class="grafica">
+            <canvas id="lineas"></canvas>
+        </div>
+        <p>
+          <br>
+        </p>
+        <div class="grafica">
+          <canvas id="torta"></canvas>
+        </div>
+        <p>
+          <br>
+        </p>
+        <div class="grafica">
+          <canvas id="area"></canvas>
+        </div>
+    </section>
+  
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="../Codigo/Graficas.js"></script>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.youtube.com/"><img src="../Iconos/youtube.png" class="icon";> </a>
+                <a href="https://web.facebook.com/?_rdc=1&_rdr#"><img src="../Iconos/facebook.png" class="icon";> </a>
+                <a href="https://www.instagram.com/?hl=es"><img src="../Iconos/instagram.png" class="icon";> </a>
+                <a href="https://co.pinterest.com/"><img src="../Iconos/pinterest.png" class="icon";> </a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Mas Informacion</a></li>
+                    <li><a href="">Contactenos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p class="designer">Copyright &copy;2023; Proyecto Final de Programación - Nivel Explorador</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="../Codigo/Graficas.js"></script>
+  </body>
+
+  </html>

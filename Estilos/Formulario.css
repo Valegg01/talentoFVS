@@ -1,0 +1,146 @@
+.login-box {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, .9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.login-box p:last-child {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.login-box a.a2 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+}
+
+.button2 {
+    margin: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgb(255, 255, 255) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.button2:hover {
+    letter-spacing: 3px;
+    background-color: black;
+    color: white;
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.button2:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%; /* Reduce el ancho en pantallas más pequeñas */
+        padding: 20px; /* Reduce el padding */
+    }
+
+    .login-box p:first-child {
+        font-size: 1.2rem; /* Reduce el tamaño de fuente del título */
+    }
+
+    .login-box .user-box input {
+        font-size: 14px; /* Reduce el tamaño de fuente de los inputs */
+    }
+
+    .login-box .user-box label {
+        font-size: 14px; /* Reduce el tamaño de fuente de las etiquetas */
+    }
+
+    .login-box p:last-child {
+        font-size: 12px; /* Reduce el tamaño de fuente del texto inferior */
+    }
+
+    .button2 {
+        font-size: 14px; /* Reduce el tamaño de fuente del botón */
+        padding: 8px 12px; /* Reduce el padding del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 15px; /* Reduce aún más el padding en pantallas muy pequeñas */
+    }
+
+    .login-box p:first-child {
+        font-size: 1rem; /* Reduce aún más el tamaño de fuente del título */
+    }
+
+    .button2 {
+        font-size: 12px; /* Reduce el tamaño de fuente del botón */
+        padding: 6px 10px; /* Reduce el padding del botón */
+    }
+}

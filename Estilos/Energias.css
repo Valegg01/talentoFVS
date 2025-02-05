@@ -1,0 +1,134 @@
+.Energias {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.Info {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.Info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    animation: pulse 0.8s ease-in-out;
+}
+
+.Info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-45deg);
+    transition: left 0.5s ease;
+}
+
+.Info:hover::before {
+    left: 100%;
+}
+
+h2 {
+    color: #0056b3;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .Energias {
+        padding: 30px 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .Info {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Energias {
+        padding: 20px 10px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Energias {
+        padding: 15px 5px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+}

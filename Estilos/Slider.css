@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    position: relative; /* Añadido para que los pseudo-elementos se posicionen correctamente */
+}
+
+.slider:before,
+.slider:after {
+    position: absolute;
+    z-index: 1;
+    width: 23.958%;
+    height: 110px;
+    background: rgba(255, 255, 255, 0.5); /* Añadido para mejorar la visibilidad */
+}
+
+.slider:before {
+    left: 0;
+}
+
+.slider:after {
+    right: 0;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 50s linear infinite;
+    width: calc(300px * 10); /* Cambiado a 300px para que coincida con el tamaño de las imágenes */
+}
+
+.slider .slide {
+    display: flex;
+}
+
+.slider .slide img {
+    width: 100%; /* Cambiado a 100% para que las imágenes sean responsivas */
+    max-width: 300px; /* Limitar el tamaño máximo */
+    height: auto; /* Mantener la proporción de aspecto */
+    padding: 5px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-300px * 5)); /* Cambiado a 300px para que coincida con el tamaño de las imágenes */
+    }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .slider .slide img {
+        max-width: 80%; /* Ajustar el tamaño de las imágenes en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .slider .slide img {
+        max-width: 100%; /* Las imágenes ocuparán el 100% del ancho en pantallas muy pequeñas */
+    }
+
+    .slider:before,
+    .slider:after {
+        display: none; /* Ocultar los pseudo-elementos en pantallas pequeñas */
+    }
+}

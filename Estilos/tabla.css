@@ -1,0 +1,73 @@
+.table-container {
+    max-height: 400px;
+    overflow-y: auto; 
+    border: 2px solid #ffffff;
+    margin-top: 30px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Para evitar espacios entre celdas */
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    background-color: #000000ce;
+}
+
+table th {
+    background-color: #313131;
+}
+
+/* Ajustes para la responsividad */
+@media (max-width: 768px) {
+    .table-container {
+        margin-top: 20px; /* Reducir el margen superior en pantallas más pequeñas */
+    }
+
+    table th, table td {
+        padding: 8px; /* Reducir el padding en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .table-container {
+        margin-top: 10px; /* Reducir aún más el margen superior */
+    }
+
+    table th, table td {
+        padding: 5px; /* Reducir el padding en pantallas muy pequeñas */
+        font-size: 14px; /* Ajustar el tamaño de la fuente */
+    }
+
+    .input {
+        width: 100%; /* Hacer que el input ocupe el 100% del ancho */
+        margin-top: 20px; /* Reducir el margen superior */
+        margin-right: 0; /* Eliminar el margen derecho */
+    }
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 13px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+    margin-top: 50px;
+    margin-right: 15px;
+}
+  
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: -13px -13px 100px #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 0%;
+    height: 0%;
+}
